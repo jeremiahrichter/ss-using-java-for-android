@@ -20,8 +20,11 @@ public class Sorter {
         userInput = array;
     }
 
-    public static void main(String[] args) {
+    private static void print(ArrayList<String> array) {
+        array.forEach(System.out::println);
+    }
 
+    public static void main(String[] args) {
     }
 
 }
