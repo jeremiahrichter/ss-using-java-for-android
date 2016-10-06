@@ -8,7 +8,7 @@ public class Sorter {
 
     private static ArrayList<String> reverse(ArrayList<String> array) {
         ArrayList<String> reverse = new ArrayList<String>();
-        for (int i = array.size(); i >= 0; i--) {
+        for (int i = array.size() - 1; i >= 0; i--) {
             reverse.add(array.get(i));
         }
         return reverse;
@@ -47,18 +47,19 @@ public class Sorter {
             } else {
                 userInput.add(input.toLowerCase());
             }
-            in.close();
-
-            if (r) {
-                userInput = reverse(userInput);
-            } else if (a) {
-                userInput = alphabetize(userInput);
-            }
-            print(userInput);
-            System.out.println("--------------\n");
-            System.out.println("Thanks!");
         }
+        in.close();
 
+        if (r) {
+            userInput = reverse(userInput);
+        } else if (a) {
+            userInput = alphabetize(userInput);
+        }
+        print(userInput);
+        System.out.println("--------------\n");
+        System.out.println("Thanks!");
     }
 
 }
+
+
