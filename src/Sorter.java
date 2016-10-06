@@ -1,11 +1,9 @@
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 
 import static java.util.Collections.sort;
 
 public class Sorter {
-    private static ArrayList<String> userInput = new ArrayList<String>();
+    private static ArrayList<String> userInput = new ArrayList<>();
 
     private static ArrayList<String> reverse(ArrayList<String> array) {
         ArrayList<String> reverse = new ArrayList<String>();
@@ -15,9 +13,9 @@ public class Sorter {
         return reverse;
     }
 
-    private static void alphabetize(ArrayList<String> array) {
+    private static ArrayList<String> alphabetize(ArrayList<String> array) {
         sort(array);
-        userInput = array;
+         return array;
     }
 
     private static void print(ArrayList<String> array) {
